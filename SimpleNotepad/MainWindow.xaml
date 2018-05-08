@@ -1,0 +1,23 @@
+﻿<Window x:Class="SimpleNotepad.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleNotepad"
+        mc:Ignorable="d"
+        Title="Simple Notepad WPF" Height="350" Width="525">
+    <DockPanel>
+        <ToolBar DockPanel.Dock="Top">
+            <Button Click="Button_Cut" MaxHeight="24" ToolTip="Cut">
+                <Image Source="img/cut.png"/>
+            </Button>
+            <Button Click="Button_Copy" MaxHeight="24" ToolTip="Copy">
+                <Image Source="img/copy.png"/>
+            </Button>
+            <Button Click="Button_Paste" MaxHeight="24" ToolTip="Paste">
+                <Image Source="img/paste.png"/>
+            </Button>
+        </ToolBar>
+        <TextBox Name="txtbox" TextWrapping="Wrap" AcceptsReturn="True" AcceptsTab="True" VerticalScrollBarVisibility="Auto"></TextBox>
+    </DockPanel>
+</Window>
